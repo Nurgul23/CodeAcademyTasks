@@ -1,0 +1,26 @@
+﻿img  {
+	width: 800px;
+	height: 400px
+}
+button .1{
+	margin-left: 715px;
+	background: red;
+	color: white
+}
+#textGoster {
+	background: red; 
+	width: 800px; 
+	height: 50px
+}
+#textYaz {
+	border: 1px solid black;
+	 width: 800px; 
+	 height: 50px; 
+	padding-left: 20px
+}
+#image1 {
+	border: 1px solid black; 
+	width: 800px; 
+	height: 50px;
+	padding-left: 20px;
+}
