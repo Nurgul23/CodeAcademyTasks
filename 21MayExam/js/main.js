@@ -39,7 +39,7 @@ function changeWeight() {
 }
 function changePlace() {
 if(a){
-	document.getElementById('textGoster').style.top='0';
+	document.getElementById('textGoster').style.top='35px';
 	a=false
 }
 else{
