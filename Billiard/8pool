@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.taxta {
+		width: 400px;
+		height: 600px;
+		background: green;
+		position: relative;
+	}
+	.ball {
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		background: red;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+<div class="taxta">
+	<div class="ball" ></div>
+</div>
+
+<script type="text/javascript">
+	
+var board = document.getElementsByClassName('taxta')[0];
+var ball = document.getElementsByClassName('ball')[0];
+
+var boardWidth = board.offsetWidth;
+var boardHeight = board.offsetHeight;
+
+var ballWidth = ball.offsetHeight;
+
+
+var a = true;
+var b = true;
+
+var i = 0;
+var j = 0;
+
+
+ball.onclick = function () {setInterval(function(){
+
+	if (a) {
+
+		i++;
+
+		if (i == parseInt(boardWidth - ballWidth)) {
+			a = false;
+		}
+
+	}else{
+		i--;
+		if (i == 0 ) {
+			a = true;
+		}
+	}
+
+
+	if (b) {
+		j++;
+		if (j == parseInt(boardHeight - ballWidth)) {
+			b = false;
+		}
+	}else{
+		j--;
+		if (j==0) {
+			b = true;
+		}
+	}
+
+
+
+ball.style.left = i+"px";
+ball.style.top = j+"px";
+
+}, 1);
+}
+</script>
+
+
+</body>
+</html>
